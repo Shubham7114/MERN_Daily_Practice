@@ -1,0 +1,106 @@
+<!-- Basic Form Detail of 31-06-2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h6>31-06-2024 (absent)</h6>
+    <form action="./Basic-01.html">
+        <!--
+            Form
+                - An HTML form is used to collect users input.
+                - It is represented by <form> tag containing different types of input elements in it.
+                - action attribute helps the form to redirect the page to another, if submitted through the button in the form.
+        -->
+
+        <label for="name">Name</label>
+        <!--
+            Label Tag
+                - A label tag is used to disclose a text in the form, referring to the input field.
+                - "for" key in attribute is mapped with the input element's id to find the respective field to it.
+        -->
+
+        <input type="text" placeholder="Enter Full Name">
+        <!--
+            Input Tag
+                - Having an imput fieldto store the user's data.
+                - Default input is of 'text' type.
+                - Atrributes: 
+                    required:   Makes the input field mandatory.
+                    diabled:    Makes the input field inactive.
+                    checked:    Makes the selected checkbox checked.
+                    placeholder:Makes the user to understand about an input field.
+                    
+            Types
+                - Text (Default state)
+                - number
+                - date
+                - password
+                - email
+                - color
+                - file
+                - url
+                - time
+                - DateTime
+                - radio
+                - buttons
+                    Submit, Reset
+                
+        -->
+        <br><br>
+        <label for="num">Phone Number</label>
+        <input type="number" id="num" placeholder="Phone Number">
+
+        <br><br>
+        <label for="date">Date of Birth</label>
+        <input type="date" id="date" placeholder="Date of Birth">
+<br><br>
+        <label for="pass">Password<span style="color:red 20px;">*</span></label>
+        <input type="password" id="pass" required placeholder="Password">
+<br><br>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" placeholder="Email">
+<br><br>
+        <label>Gender: </label>
+        <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+        <input type="radio" name="gender" id="others" value="other">
+            <label for="others">Others</label>
+<br><br>
+        
+        <label>Language: </label>
+        
+        <input type="checkbox" name="language" id="eng" value="English">
+            <label for="eng">English</label>
+        <input type="checkbox" name="language" id="hin" value="Hindi">
+            <label for="hin">Hindi</label>
+        <input type="checkbox" name="language" id="beng" value="Bengali" >
+            <label for="beng">Bengali</label>
+        <input type="checkbox" name="language" checked id="tam" value="Tamil">
+            <label for="tam">Tamil</label>
+
+<br><br>
+        <label for="count">Country: </label>
+            <select id="count">
+                <!-- if we have one choise that time we use select tag
+                       - 1 is Select and inside option we have  -->
+                <option selected disabled>Please select a country</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Egypt">Egypt</option>
+            </select>
+<br> <br>
+
+        <button>Submit-btn</button>
+        <input type="submit" value="Submit-inp">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>

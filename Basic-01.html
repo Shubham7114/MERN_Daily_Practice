@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        -meta tag basically defines about the page.
+    -Like:-
+       -Character set 
+       -About the webpage
+       -Viewport
+       -About the author
+       -Compability with the Browser
+       -Refresh Rate....
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <title>2 Days of html & color basic</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nobis, qui at reprehenderit id sed, temporibus
+        recusandae pariatur tempore ex repellat saepe rem explicabo nesciunt dolorum! Explicabo eius vitae nihil?
+        Accusamus quisquam optio, dolorem doloremque eveniet nisi tempora corporis exercitationem iste necessitatibus a
+        obcaecati quam in ea praesentium voluptatum molestias similique neque, sit voluptate. Repudiandae maiores totam
+        nemo iure itaque!</p>
+    <!-- it is use for paregraph tag  -->
+
+    <img style="width: 45%;" src="./Assets/OIP.jpeg" alt="Porche Car Image"><br>
+    <!-- img  tag is use for adding the image in web page  -->
+
+    <hr>
+
+    <a href="./intro.html" target="_blank"><b>Click Here!</b></a>
+    <!-- a <a> this tag is use for adding the link in web page
+        - where we want to navigate one page to another
+        - target blank will be open new page when we clink on link -->
+
+    <hr>
+
+    <a href="./intro.html" target="_blank">
+        <br><img style="width: 40%;" src="./Assets/rohit.webp" alt="Rohit Sharma Image">
+    </a>
+
+    <!-- image is work like a link
+         - if we click on image image will be naviagate one page to another -->
+
+    <h3>Formatting Tags</h3>
+
+    <!-- Formating Tag
+    -They are basically used to format texts.
+    <b>      -Bold
+    <strong> -Important text
+    <i>      -Italic Font
+    <em>     -Emphasized
+    <mark>   -Marked Text 
+    <sub>    -Latter Will be on Upper Side
+    <sup>    -Latter Will be on Lower Side
+        -->
+    <p>This is an <strong>important</strong> and <b>bold</b> text.</p>
+    <p>This Text is in <i>Italic font</i>and its is <em>-Emphasized</em>text.</p>
+    <p>It is <mark>Marked text and it is</mark> a <small>samll</small> text.</p>
+    <p>This text has been<del>Deleted</del> off with a newer <ins>Insertad</ins> text.</p>
+    <p>This is an example of<sub>Subscripted</sub>text and this one is <sup>Super Scripted</sup>
+    <h1> H<sup>2</sup>O </h1> text.</p>
+
+
+    <p>Lorem <mark></mark>ipsum dolor sit amet consectetur adipisicing elit. Quod officia quaerat numquam voluptatem aut
+        libero dignissimos, hic voluptates corporis ad veniam dolorem sunt nisi nemo nam mollitia ducimus minus animi.
+        Labore aperiam qui cum nesciunt sapiente incidunt nihil. Eos autem odit placeat quam libero earum iure dolore id
+        incidunt voluptatum, sequi vero sint repudiandae, dolorum unde maxime sunt officia ullam?</p>
+
+
+    <h1>Shubham</h1>
+    <h2>Shubham</h2>
+    <h3>Shubham</h3>
+    <h4>Shubham</h4>
+    <h5>Shubham</h5>
+    <h6>Shubham</h6>
+
+    <hr>
+    <h3>24-05-2024</h3>
+
+    <div>Property of div tag</div>
+    <!--      - it takes the whole row of the page
+              - it is generic block level element
+              - it occupay complet width in web page
+              - it is like container and store multiple elememt and nested element also
+              - we adjust height and width
+              - alos known as Division tag
+    -->
+    <div style="background-color: rgb(217, 114, 11);"> Block -1</div>
+    <div style="background-color: rgb(17, 156, 211);"> Block -2</div>
+    <div style="background-color: rgb(184, 219, 28);"> Block -3</div>
+    <hr>
+    <span>Property of Span Tag</span>
+    <!--    - A Span tag is a container which can store only text values.
+            - Does not support nesting in html.
+            - it is Generic inline  element.
+            - It takes the necessary content part only.
+            - It allows a new next tags to sit next to it, if space is available.
+            - Cannot customize the width and height of the element.
+     -->
+    <span style="background-color: rgb(217, 114, 11);"> Block -1</span>
+    <span style="background-color: rgb(17, 156, 211);"> Block -2</span>
+    <span style="background-color: rgb(184, 219, 28);"> Block -3</span>
+
+    <!-- 
+     Colors
+        
+        - Color Names
+             - They are pre-defined color names for web.
+             - standard color names.
+        
+        * RGB Values
+            - Three Light Sources - RED, GREEN, BLUE.
+            - The value for each color shows the intensity.
+            - Ranges from 0 to 255 value for each color.
+            - Total Colors available:
+               256 * 256 * 256 = 16777216 Possible Colors
+        
+        * RGBA Values
+            - Similar to RGB with an Alpha Value
+            - Alpha value helps in bring the transparency in the color.
+            - Alpha value is ranged in between of 0.0 to 1.0
+            - Where 1.0 is stated to be solid color.
+            - Where 0.0 is stated to be a transparent color. 
+-->
+    <p style="color: orange;"> This is in RED bt Color Name.</p>
+
+    <p style="color: rgb(194, 110, 86);"> This is in RED by RGB Value.</p>
+
+    <p style="color: rgba(255, 0,0, 0.5);">This is in RED by RGBA Value.</p>
+
+    <p style="color: #0000ff;"> This is in RED by Hex Value.</p>
+
+    <p style="color: hsl(320, 81%, 51%);"> This is in RED by HSL Value.</p>
+
+    <p style="color: hsla(360, 70%, 47%, 0.5);">This is in RED by HSLA Value.</p>
+
+<hr>
+
+<!-- -HEX Value
+      -Very much similar to RGB value having the same concept of light sources.
+      - it uses Hexa Decimal Value for representation.
+      - syntax
+        # -> definingthe hexa values for representation.
+            value will be for RED GREEN BLUE color
+            Each color Will be Shown With a Pair of Digit.
+          
+            Red    ->00
+            Green  ->00
+            Blue   ->00
+            
+            #000000  ->Black
+            #ffffff  ->White
+        
+        - HSL Values (hslpicker.com)
+           -stared for HUE.SATURSATION,LIGHTNESS
+           - HUE        -> represents the color shades in a range of value from 0 to 360.
+           - Saturation -> represents a particular color shade, range from 0 to 100 in percentage.
+           - Lightness  -> represents the color to be light or dark, range from 0 to 100 in percentage
+        
+        - ISLA Values
+           - similar to HSL with an Alpha Value.
+           -Alpha Value helps in bring the transparency in the color.
+           -Alpha value is range in between of 0.0 to 1.0.
+           -Where 1.0 is started to be solid color.
+           -Where 0.0 is stated to be a transparent color.
+           
+-->
+
+
+</body>
+
+</html>

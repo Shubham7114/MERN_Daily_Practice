@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - property</title>
+</head>
+<body style="height: 900px;">
+    <h2>Position- property</h2>
+    <!-- Static
+         
+    Static positioned elements are nor affected by the top,
+    bottom, left and right property
+
+
+    an element with position: static; is not positioned in any 
+    special way;
+    it is always positioned according to the normal flow of the page: 
+     -->
+
+                 <div style="position: static;
+                             margin: 15px;
+                             border: 1px solid black;">
+                             This is at position static
+                      </div>
+
+     <!-- Fixed 
+
+          an element with position: fixed; is positioned relative to the
+          viewport,
+          which means is always stays in the same place even if the page is scrolled
+     -->
+      
+                 <div style="position: fixed;
+                             margin: 25px;
+                             margin-left: 350px;
+                             border: 1px solid black;">
+                             This is at position Fixed.
+                      </div>
+      
+     <!-- Sticky 
+
+     an element with position: Stickey; is positioned based on the user's
+     scroll position.
+     A stickey element toggles between relative and fixed depending on 
+     the scroll position -->
+
+                <div style="position: sticky;
+                                margin: 15px;
+                                top: 20px;
+                                border: 1px solid black;">
+                                This is at position Stickey.
+                                </div>
+    
+     <!-- Relative
+
+     an element with position: Relative; is positioned relative to its 
+     normal position
+      -->
+
+                            <div style="position: relative;
+                            top: 20px;
+                                width: 300px;
+                                height: 300px;
+                                border: 3px solid darkcyan;">
+                                This is at position Relative.
+                                </div>
+      
+       <!-- Absolute
+
+       An element with position absolute
+        is position relative to the nearest positioned ancestor (instead of positioned
+        relative to the viewport,like fixed)
+        if an absolute positioned element has no positioned ancenstors, it uses the documemt
+        body,and moves along with page scrolloing.
+         -->
+
+        <div style="position: absolute;
+                    border: 2px solid black;
+                    color: white;
+                    background-color: blueviolet;
+                    top: 35%;
+                    margin: 0 0 0 50px;">
+                    
+                     This is at position   Absolute.
+                </div>
+</body>
+</html>

@@ -1,0 +1,629 @@
+Some other imp ?
+1. Difference between java and javascript ?
+
+
+
+7/9/23 
+
+1. What is Javascript? 
+ ->    it is scripting language which is use to add functionality or action into website or web application.
+       it is loosely typed language.
+       it is interpreted language. 
+       Javascript is object base language. in Javascript window is globle object.
+       
+
+
+2. Why js is interpeterd  language?
+ ->   javascript has no compilation step> insted an interpreter in the browser reads over the javascript code, interpreded
+      each line and runs it.
+
+
+3. Why js is loosesly typed language?
+  ->  because in javascript we diclare string in " " or '' when we diclare string in "" it will string and when we declared string
+      '' in singke code its also a string thas why javascript is lossely typed language.
+
+
+4. How Many Ways to use javascript in html page?
+  -> There are two ways to use js 
+          1.Internal js :- in html pahe first we write script tag and in that we write js code.
+          2.External js :- in this we create a seperate js file and import that js file in html file by using script.
+
+
+5. How to get output in Javascript
+        1.document.write()            :- it will display output on browser.
+        2.window.alert()              :- it will generate one popup window and display output in it.
+        3.console.log()               :- it will display output in browser console.
+        4.DOM(document Object Model)  :- it is use to manipulate DOM element and display output inside specific element. 
+
+6. What is Variable ?
+    -variable it use to store data in it.
+    -it is like container in which we can store any type of data.
+    -in js variable can create with var, let and const keyword.
+            (var,let,const) - let and var are es6 new variable
+
+ syntax:     var variableName;        // variable declaration 
+             variableName = data;    // variable initialization.  
+ 
+7. What is the rules of variable           
+
+Rules:
+-variable name can not be any reserved keyword.
+-variable name can not start with digit.
+-variable name start with lowercase letter.
+-variable name can start with alphanumeric, $ and _;
+
+! data types in js 
+-primitive data type or inbuilt data type 
+1.number 
+2.string : "" or ''
+3.boolean : true or false ;
+4.undefine 
+5.null : variable with empt data;
+
+-nonprimitive data type or user define data type 
+6.array 
+7.object 
+
+// Data types in js
+
+      1. number data type
+      var num1 = 100;
+      var num2 = 0.5;
+      var num3 = 2424235344;
+
+      2. string data type
+      var yourName = "Sanket";
+      var friendName = "Devanand";
+      var myData = "123";
+
+      3. Boolean
+      var cond1 = true;
+      var cond2 = false;
+
+      4. undefine
+      var city;
+
+      5.null data type
+      var state = null;
+
+      6.array data type []
+      var students = ["Aakash", "Pradnya", "Rahul"];
+
+      7. object data type {}
+      var emp = { id: 101, name: "Pooja", salary: 95000 };
+
+      Pooja,shreyas,meenal,pratiksha, Devanand,Sanket ;
+================================================================================
+8/9/23 
+
+⁮ Operators
+
+1.Arithmatic operator : 
++ , - , * , / , % , ** , ++ , --
+
+/ (division)         : it return us quotient 
+% (modulus)          : it return us remainder 
+** (exponentiation)  : it return power of any number.
+
+2.Relational operator:  all relation operator return us boolean data 
+> , < , >= , <= , != ,== , === 
+
+== (equal to):            it will only value if values are same then it return true.
+=== (exactly equal to):   it will check both value as well as it data type if both are same then it return true.
+
+
+3.Logical operator :     operator return us boolean data 
+OR (||) ,AND (&&) ,NOT (!)
+
+
+! What is Function ?
+     -it is a block of code which is use to perform specific operation.
+     -Function will execute only when we call it. 
+     -Function can be reuse multiple time. 
+
+          syntax:   function functionName(){
+                        /// code 
+                  }
+
+# Arrow Function is introduce in ES6
+
+TAsk: calculator 
+pratiksha,shreyas,meenal,Devanand,Sanket
+==================================================================================
+9/9/23 
+
+-we saw more examle on default function
+-we saw more examle on parameterize function 
+-I explain calculator 
+-tassign task 
+  1. temprary address same as permanant 
+  2. traffic light task on three button 
+
+
+pratiksha,shreyas,meenal,Devanand,Sanket
+==================================================================
+11/9/23 
+
+! Which Are The Type Of Function Js ?
+   -in Javascript we have mainly two types of function. 
+      1.Inbuilt function : function provide by Javascript.
+      2.User define function : function which is created by user. 
+
+again four types 
+1. function with no argument and no return value; 
+2. function with argument but no return value;
+3. function with no argument but with return value ;
+4. function with argument and with return value; 
+
+
+! what is prompt
+:- it is inbuilt method which generate one popup window and allows us to get input value from user 
+      like we want number from user for adding that time we use prompt 
+
+task : get first name and last name by using prompt and display friendName in red color and lname in blue color on window
+pratiksha,Devanand,sanket 
+==================================================
+12/9/23 
+-task explain temprary address same as permnant 
+-task explain color first name and last name 
+
+*Conditional statement : if we want to execute code conditionaly then for that we use it.
+
+1.if : if condition is true then if block will execute otherwise not 
+          syntax:     if(condition){
+                      ////code 
+                      }
+
+2.if else:  if condition is true then if block will execute otherwise else block will get execute
+                        syntax:    if(condition){
+                                   //// true part
+                                   }else{
+                                   /// false part 
+                                   }
+
+pooja,shreyas,meenal,pratiksha,Devanand, sanket.
+================================================================
+13/9/2023
+
+*Nested if else : in this we write if and else block inside another  if block 
+
+                    synatx:  if (condition){
+                            ^
+                           !      if(condition){
+                          !                 true part;
+                         !           }else{
+                        !                   false part
+                       !              }
+                      !              
+                      ----------> }else{
+                                  //false part
+                                   }
+
+*Switch statement : when we have one option and multiple choice in that case we use it. 
+                              syntax:   
+                                  switch(choice){
+                                    case 1:{
+                                      ///code;
+                                      break;
+                                    }
+                                    case 2:{
+                                       ///code;
+                                      break;
+                                    }
+                                    .
+                                    .
+                                    .
+                                    default:{
+                                       ///code;
+                                      break;
+                                    }
+                                  }
+
+*Looping Statment: if you want to reapte same thing multipe time for that we use looping statment
+-there three types of looping 
+1.for loop : it has three expresion in it. 
+   -1. initialization     
+   -2.condition-check  
+   -3.increment/decrement 
+   -if the condition is true then and only then block will execute.
+
+   syntax:  for(initialization;condition-check;increment/decrement){
+              code to execute 
+         }
+
+2.while loop : it has three expresion in it. 
+   -1. initialization,2.condition-check, 3.increment/decrement 
+   -if the condition is true then and only then block will execute.
+
+   syntax: 
+        initialization;
+    while(condition-check;){
+              code to execute ;
+              increment/decrement
+         }
+
+3.do while :it has three expresion in it. 
+   -1. initialization,2.condition-check, 3.increment/decrement 
+   -if the condition is true then and only then block will execute.
+   -even though condition is false code execute once.
+
+syntax: initialization;
+       do{
+        //code
+        increment/decrement 
+       }while(condition-check)
+
+===============================================================
+14/9/23 
+
+-we work on for loop , while loop, do while 
+-we execute loop in forword and reverse 
+-i explain given task 
+
+pooja,shreyas,meenal,pratiksha, Devanand, sanket .
+
+========================================
+15/9/23 
+
+-task swap two number 
+-task vovel and consonent 
+-task eve number and odd number 
+
+-task assign : toggle image  
+
+pooja,shreyas,pratiksha, Devanand, sanket .
+============================================================
+16/9/23 
+
+-i explain toggle image task 
+-nesting loop : writting one loop insidd another loop 
+
+===============================================================
+18/9/23 
+
+* star patter 
+*Array : 
+-it is use to store multipe values in single variable with same data type.
+-it store value or data on index basis.
+-array index always start from zero index 
+-we can access array data outside array by writting arrayName[index];
+-array represented by []
+========================================
+21/9/23 
+
+-In Javascript Mainly we have two types of Function 
+1.Inbuilt Function : function which is already developed. and which we can use
+2.User Define Function : function developed by user 
+
+*function: 
+-it is block of code which use to perform specific task.
+-it will execute only when we call it.
+-function can be re-use multipe time. 
+
+sytax: function functionName(){
+      ///code 
+     }
+
+Prompt methode 
+
+-deepak,pooja,meenal,pratiksha,Devanand,sanket,mohini,shradha,nikita.
+=====================================================
+22/9/23 
+
+-write a parameterize function which will take three parametr fname,mname,lname and return our fullname
+-write a function which will take one parameter as your name and return output "welcome yourName in Hematite Infotech Pvt Ltd.
+
+-how to print array with for loop 
+
+
+deepak,meenal,shreyas,pratiksha,sanket,Devanand,nikita,shradha,mohini 
+======================================================================
+23/9/23 
+
+@ What is Typecasting ?
+-> whenever you get data from input element it return data in string formate.
+    TypeCasting: converting one datatype to another is called typecasting 
+
+*Object:
+     - it is use to store multipe values with different datatype.
+     - in object data store in key and value pairs 
+     - we can access object data outside object by writting objectName.keyName 
+     - object represented by {}
+
+
+deepak,meenal,shreyas,pratiksha,sanket,Devanand,nikita,shradha,mohini 
+===========================================================================
+25/9/23 
+
+-function inside object.
+-object inside object.
+
+-array of object 
+
+Task: create array of object for 10 employee containing keys id,name,post,
+salary,gender,address,age,contact,department.
+
+1. print all employee data 
+2. print data of employee whoes gender is female only.
+3. print data of employee whoes salary is grater than 70000
+4. print data of employee whoes post is HR 
+.  print data of employee whoes age is greater than 50 
+6. print data of employee whoes id is in between 104 to 107 
+
+meenal,pratiksha,sanket,Devanand,nikita,shradha,mohini,pooja  
+================================================
+26/9/23 
+
+*i explain given task array of object 
+*i assign and explain check student task 
+
+*string :-it is collection of character 
+         - it always write in "" or '' 
+         -in string every letter has index number and index number start from 0 index 
+         -in string blank space is also consider as string. 
+
+*there are three methode which gives us index number of searching string
+1.indexOf(searching-string, index number) :
+-it return index number of first occurences of searching string .
+-it start searching of string from left to right.
+-it take two parameter 1.searching-string, 2.index number.
+-if searching string is not found then it will return -1. 
+
+2.lastIndexOf(searching-string, index number):
+-it return index number of first occurences of searching string .
+-it start searching of string from right to left.
+-it take two parameter 1.searching-string, 2.index number.
+-if searching string is not found then it will return -1.
+
+3.search(searching-string):
+-it return index number of first occurences of searching string .
+-it start searching of string from left to right.
+-it take one parameter 1.searching-string.
+-if searching string is not found then it will return -1. 
+-it is faster than indexOf method
+
+Assign Task.
+
+meenal,pratiksha,sanket,Devanand,nikita,shradha,mohini,deepak,Shreyas 
+==========================================================
+27/9/23
+
+
+* methode which will return part of string by writting it index number 
+4.slice(start-index,End-index): it will return part of string from given string 
+          -it will take two parameter 1. start index,2. End-index 
+          -if we write +ve index then it will search string from left to right 
+          -if we write -ve index then it will search string from right to left 
+
+5.subString(start-index,End-index): it will return part of string from given string 
+          -it will take two parameter 1. start index,2. End-index 
+          -in this we write only +ve index then it will search string from left to right 
+          
+6.substr(start index,total-number of character):it will return part of string from given string 
+          -it will take two parameter 1. start index,2. total-number of character 
+          -in this we write only +ve index then it will search string from left to right 
+
+7.charAt(index-number): it return us single character available on searching index. 
+8.charCodeAt(index) : it return us ASCII code of character available on searching index.
+
+9.replace(old-string, new-string)
+
+deepak,meenal,shreyas,pratiksha,Devanand,nikita,shradha,mohini
+=============================================================== 
+29/9/23 
+
+* i explain Replacing string task 
+* how to get get and set data in Javascript
+
+- if you want you want to get and set data and time in Javascript for that 
+first we have o create object of data class.
+
+-how to create date class object 
+-date object return date and time from browser
+var mydate = new Date()
+
+//how to set date and time 
+var mydate = new Date(year,month,date,hourse,minutes,second)
+
+Task: get value form date class object for month and print current month ;
+deepak,shreyas,pratiksha,nikita,shradha,mohini,sanket.
+===========================================================================
+30/9/23 
+
+What is synchronus and asynchronous in Javascript-
+-Javascript is by default asynchronous in nature.
+-it work on single thread 
+
+synchronus :  as the name suggests synchronus means to be in a sequence 
+asynchronous:
+
+setInterval: it call another methode for multiple time after given time.
+setTimeOut: it call another method only once after perticular time.  
+-when we pass a function as parameter in anotherr function in that case we do write parenthesis for inner function
+
+-form validation 
+-external Javascript
+
+
+
+shreyas,pooja,nikita,shradha,mohini,sanket.
+=================================================================
+3/10/23 
+*form validation after pressing submit  Button by using onsubmit 
+regular expresion for password:
+
+^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$
+
+This regex will enforce these rules:
+
+At least one upper case English letter, (?=.*?[A-Z])
+At least one lower case English letter, (?=.*?[a-z])
+At least one digit, (?=.*?[0-9])
+At least one special character, (?=.*?[#?!@$%^&*-])
+Minimum eight in length .{8,} (with the anchors)
+
+*Task assign for form validation. 
+
+shreyas,nikita,shradha,mohini,Devanand,pratiksha.
+
+======================================================
+4/10/23 
+
+*form validation before pressing submit  Button by using onblur event 
+*advanced for loop 
+*use of  for of 
+*use of  for in 
+*Task assign for form validation by using onblur event
+nikita,shradha,mohini,Sanket 
+
+==============================================================
+5/10/23 
+
+*Advanced function 
+-default methode 
+-parameterize method
+-anonymous method 
+-arrow method 
+-optional parametrize method 
+-rest parametrize method 
+
+*callback methode : passing a function name as argune to another 
+                    function is called callback function.
+
+shreyas,pooja,nikita,shradha,mohini,sanket,Devanand,meenal,pratiksha
+===========================================================================
+6/10/23 
+
+-contact : it is use to add two or more string 
+- use of spread operator for mearging two or more object 
+-how to use template literal 
+- use of + ooperator 
+
+shreyas,nikita,shradha,mohini,sanket,Devanand,meenal,pratiksha
+
+*task : show more and shoe less 
+============================================
+7/10/23 
+
+*ES-5(ECMA script-2009) and ES-6(ECMA script-2015) 
+ 
+ES-5(ECMA script-2009)
+
+trim() : it remove wide space from both side of string.
+
+====================================================================
+26/10/23 
+
+ES6(2015):
+
+1.Variable Declaration
+
+ let,const :- it is use to ceate a block scope variable 
+
+ var :    -it is use to create a function scope variable 
+          -it can be re-declare.
+          -it can be use before declaration.
+
+ let :   -it is use to create a block scope variable.
+        -it can not be re-declare 
+        -it can not be use before declaration
+
+ const : -it is use to create a block scope constant variable.
+        -it can not re-declare.
+        -when we create it at same time we have to initialize it. 
+        -it value never change at run time.
+        -it can not be use before declaration.
+
+
+
+2.What is hoisting :
+    -it is Javascript default behaviour which moves variable declaration automatically at top.
+
+3.what is "use strict" 
+   -it is es5 feature 
+   -it execute Javascript code in strict mode 
+   -it always at top of page 
+
+4.trim(): it remove unwanted wide space from both side of string.
+
+=================================================================
+27/10/23
+
+1.download or install node js
+  => node -v     // it show nodejs version 
+
+2.OOPs(Object Oriented Programings) :
+    -to provide security 
+    -to perform code reusability 
+    -reduce line of code.
+    -eassy to maintain 
+
+Feature of Oops 
+1.class :
+    -it is collection of data-member and member function.
+    -it is template which we can reuse.
+    -to create class we have use class keyword.
+    -class name must start with capital letter 
+
+    *this: it act as owner of class 
+        -as well as it represent current class .
+        
+2.constructor: 
+     -it is special member function of class.
+     -in Javascript constructor name must be constructor only.
+     -constructor will execute automatically when an class object is created or initialize.
+
+
+3.Object:
+     -it is an instance of class.
+     -with the help of object we can access class data-member and member-function outside class.
+
+-how to execute js in in node terminal 
+> node filename.js 
+
+
+Task: create one class with name Students Containing id,name,gender,contact,phy,che,math
+      in this class create one methode with name studentsDetail which will display student
+      all information.second methode with studentResult which will display phy,che,math mark
+      seperatly as well as average mark. 
+
+=================================================================
+28/10/23
+
+OPPs():-
+1.Inheritance :
+    -it allows us to access parent class properties into child class.
+    -to perform Inheritance we have to  extends child class from parent class.
+    -parent class is also called super class and child class sub class 
+
+2.abstraction:
+    -Hidding unnecessary data from user.
+
+3.encapsulation : 
+    -wrapping of Data into single unit.
+
+4.pollymorphism :
+    -it is ability to take more than one form.
+
+  @ method over-loading: when we have multiple method with same in name in same class is called as method overloading. 
+  @ method over-ridding :    when we have multiple method with same name in different class is called as method over-ridding. 
+
+========================================================================================
+30/10/23
+
+*static: 
+    -static datamember can not be access outside class by using class object.
+    -we can access static datamember outside class by using classname.propertyName.
+
+*module concept :
+   -it is simple or complex Javascript logic written in single of multipe Javascript file.
+    to reuse it. 
+   -to use module we have to use export and import statement
+   -export :it is use to send data from a file.
+   -import : it is use to access data from another file.
+
+*destructuring:
+   -creating a constant variable and storing data init it.
+   -we can destruture array as well as object also.
+   -while destructuring object variable must be same as keyName available in object.
+

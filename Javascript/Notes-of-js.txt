@@ -1,5 +1,6 @@
 Some other imp ?
 1. Difference between java and javascript ?
+2. what is hosting?
 
 
 

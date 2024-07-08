@@ -1,0 +1,279 @@
+javacript:
+
+(1) Makes the page Interactive
+(2) is very fast -JS runs on clinet Macchine
+(3) there is no compilavtions and no dependency oon the server in the Backend
+(4) Interprter
+
+Java Not Equal to javacript ,they are no way related
+
+       java/c#              |             javacript
+                            |            
+(1) Compiler                |             Interprter
+(2) A Backend language      |             a frontENd language
+(3) server Involved         |             no server Involved
+
+
+(1) A programer writes code in a programming language (high level)
+(2) the programer code is converted then gets to machine code (low level)(0's and 1's)
+
+
+George Boole ---  0 and 1
+Compiler: reads the entire code and converts it as a whole chunk to the machine code at once 
+               - if your code has problems, gets detected early and code will not Compiler
+               - it is a slow process
+
+Interprter: Reads one line of code at a time and converts it into machine code
+            -Even if your code has issues, you can still see the output till Interprter reaches to the bad code
+            -It is a Fast Process
+
+
+
+/********************* Variable in javacript ***************************************/
+
+Variable: name given to memory location Temporarily 
+
+Variable can be created using the following Keywords
+   1  var  :- 
+         Console.log(num1); undefine -hosting
+
+         var num1 = 10;
+         console.log(num1);
+         num1 = 15; // No error
+         console.log(num1);
+
+         1. access the variable before initialization, no error
+         2. can re-assign the value(mutable)
+         3. it has a functional scope
+
+ -----------------------------------------------------------------------------------------
+   2  let  :-
+
+    Console.log(num2);   :-  Uncaugth Reference : cannot access 'num3'
+
+         let num2 = 20;
+         console.log(num2);
+         num2 = 25;   // No error   -> we can chnage value after initialization
+         console.log(num2);
+
+         1. access the variable before initialization,  error
+         2. can re-assign the value(mutable)
+         3. it has a block scope
+
+
+-------------------------------------------------------------------------------------------
+ 3  const  :-
+
+    Console.log(num3);   :-  Uncaugth Reference : cannot access 'num3'
+
+         let num3 = 20;
+         console.log(num3);
+         num3 = 25;        // Uncaugth TypeError : Assignment to constant variable
+         console.log(num3);
+
+         1. cannot access the variable before initialization, ERROR
+         2. cannnot re-assign the value (immutable)
+         3. it has a block scope
+
+
+/********************Example****************************/
+
+var num=[10,"React",true,102.2];
+  console.log(num[2])
+   -> true    //Output
+
+/****************Datatype in javacript******************/
+
+Datatype: type of data  a var can hold
+
+(1) Primitive Datatype 
+       -Number (digits ,integer,float,decimal)
+       -string(char,varchar,string)
+       -boolean(true:1 false:0)
+(2)  refrence Datatype
+      -Arrray :contigous location of memory holding the  data
+      -function (classes)
+      -object
+(3)  other Data types
+       -undefined:Variable whose value is not defined
+       -null: empty object
+
+/****************************** Datatypes in js ***********************/
+typeof it return data type;
+
+  var numDT1 = 20;
+  console.log(typeof numDT1); // Number
+
+  var numDT2 = 20.455;
+  console.log(typeof numDT2); // Number
+
+  var numDT3 = "234";
+  console.log(typeof numDT3); // string
+
+  var numDT4 = "Shubham";
+  console.log(typeof numDT4); // string
+
+  var numDT5 = true;
+  console.log(typeof numDT5); // boolean
+
+  var numDT6 = false;
+  console.log(typeof numDT6); // boolean
+
+  var undDT7 = undefine;
+  console.log(typeof undDT7); // undefine
+
+  var nullDT8= null;
+  console.log(typeof undDT7); // null
+
+
+
+/******************************* Operators  in javacript *******************/
+(1) Arithmetic operators
+   a.+:    adds Number
+   b.-:    substracts Number
+   c. *:   Multiplcates Number
+   d. /:  divides two Number
+   e. %:  it gives the remainder of a division operators
+   g.  increment
+        i. post increment
+        ii.pre increment
+   h.  decrement 
+        i.post decrement
+        ii.pre decrement
+
+(2)  Assignment operators
+    a.  = used to assign a value
+    b.   concise way of representation
+
+
+(3)  Comparsion operators
+      a. == it compares the data value on both sides and not the ddata types
+      b. ===  it compares the data value on both sides as well as the data types
+
+          Example:- var num = "10";
+                    var num1=  10;
+                    console.log(num==num1);
+                    console.log(num===num1);
+                    ------------------------------------
+                    true
+                    false
+
+      c . check the rest in PPT
+
+
+(4)   Logical operators
+       a.&& it checks the condition on both side ,if both are true ,then it returns true
+       b .|| it checks the condition on both side ,if eithe one of them is true,then it will returns true
+       c . ! it gives you a negation /inversion of the valur
+       
+
+/******************************  Operators in Javascript Example   **************************************
+Arithmatic Operator
+
+  (+) operation
+
+  var num1 = 15;
+  var num2 = 5;
+  var num3 = num1 + num2;
+  console.log(num3);  // 20
+
+   (-) operation
+  
+  var num1 = 15;
+  var num2 = 5;
+  var num3 = num1 - num2;
+  console.log(num3);  // 10
+
+   (*) operation
+  
+  var num1 = 5;
+  var num2 = 5;
+  var num3 = num1 * num2;
+  console.log(num3);  // 25
+
+   (/) operation --> gives remainder
+  
+  var num1 = 15;
+  var num2 = 5;
+  var num3 = num1 / num2;
+  console.log(num3);  // 3
+
+   (%) operation  --> gives quotient
+  
+  var num1 = 15;
+  var num2 = 5;
+  var num3 = num1 % num2;
+  console.log(num3);  // 0
+
+   (++) operation  --> post increment
+  
+  var num1 = 15;
+  var a = num1++;
+  console.log(a);  // 16
+
+   (++) operation --> pre increment
+  
+  var num1 = 15;
+  var a = ++num1;
+  console.log(a);  // 16
+------------------------------------------------>
+
+Assignment Operators ;
+
+   var x = 10;
+   var y = 20;
+
+    x = x + 1; // 11
+    x += 1;   // 12
+
+    y = y - 1; // 19
+    y -= 1;   // 18
+
+    x = x * 2; // 20
+    x *= 2;   // 40
+ -------------------------------------------->
+
+Comparsion operation
+
+    var num1 = 10;
+    var num2 = "10";
+ 
+ (==)
+    if(num1 == num2){
+       console.log('both are equal');
+    }else{
+       console.log('Not equal');
+    }
+    -> true = both are equal;
+
+(===)
+    if(num1 === num2){
+       console.log('both are equal');
+    }else{
+       console.log('Not equal');
+    }
+    -> false = both are not equal;
+
+-------------------------------------------->
+Logical Operators
+
+    var num3 = 10;
+    var num4 = "10";
+ 
+ (!==)
+    if(num3 !== num4){
+       console.log('not equal');
+    }else{
+       console.log('both are equal');
+    }
+
+(!===)
+    if(num3 !=== num4){
+       console.log('not equal');
+    }else{
+       console.log('both are equal');
+    }
+   
+     
+
+

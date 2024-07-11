@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        this.session = "JavaScript";
+
+        this.room = {
+            session: "React",
+            subject: function () {
+                console.log(`${this.session}`);
+                console.log(`${session}`);
+            }
+        };
+
+        let classroom = {
+            session: "MERN/Mean",
+            subject: function () {
+                console.log(`${this.session}`)
+                console.log(`${session}`)
+            }
+        };
+
+        this.room.subject();
+        classroom.subject();
+        console.log("---------Example of Class---------------")
+
+        // -----------------------Example of Class--------------------------
+        class resturentManger{
+         restaurentList = [
+            {name :"KFC", location:"Rajiv Chowk",city:"Delhi"},
+            {name :"Subway", location:"Chandani Chowk",city:"Mumbai"},
+            {name :"Dminoz", location:"Mg Road",city:"Banglore"}
+         ];
+      
+          //functionality
+            printAllName(){
+             this.restaurentList.forEach((dolley) => {
+              console.log(dolley.name);
+             });
+           }
+     }
+
+     let obj = new resturentManger();
+     obj.printAllName();
+
+    </script>
+
+    <b>11-07-2024</b>
+    <h1>this keyword practice</h1>
+
+</body>
+
+</html>

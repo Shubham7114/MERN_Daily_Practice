@@ -7,34 +7,36 @@ Some other imp ?
 7/9/23 
 
 1. What is Javascript? 
- ->    it is scripting language which is use to add functionality or action into website or web application.
-       it is loosely typed language.
-       it is interpreted language. 
-       Javascript is object base language. in Javascript window is globle object.
+ ->  it is scripting language which is use to add functionality or action into website or web application.
+     it is loosely typed language.
+     it is interpreted language. 
+     Javascript is object base language. in Javascript window is globle object.
        
 
 
 2. Why js is interpeterd  language?
- ->   javascript has no compilation step> insted an interpreter in the browser reads over the javascript code, interpreded
-      each line and runs it.
+ ->   javascript has no compilation step> insted an interpreter in the browser reads over
+      the javascript code, interpreded each line and runs it.
 
 
 3. Why js is loosesly typed language?
-  ->  because in javascript we diclare string in " " or '' when we diclare string in "" it will string and when we declared string
-      '' in singke code its also a string thas why javascript is lossely typed language.
+->  because in javascript we diclare string in " " or '' when we diclare string in "" it will 
+    string and when we declared string'' in singke code its also a string thas why javascript 
+    is lossely typed language.
 
 
 4. How Many Ways to use javascript in html page?
   -> There are two ways to use js 
-          1.Internal js :- in html pahe first we write script tag and in that we write js code.
-          2.External js :- in this we create a seperate js file and import that js file in html file by using script.
+      1.Internal js :- in html pahe first we write script tag and in that we write js code.
+      2.External js :- in this we create a seperate js file and import that js file in html 
+                       file by using script.
 
 
 5. How to get output in Javascript
-        1.document.write()            :- it will display output on browser.
-        2.window.alert()              :- it will generate one popup window and display output in it.
-        3.console.log()               :- it will display output in browser console.
-        4.DOM(document Object Model)  :- it is use to manipulate DOM element and display output inside specific element. 
+      1.document.write()            :- it will display output on browser.
+      2.window.alert()              :- it will generate one popup window and display output in it.
+      3.console.log()               :- it will display output in browser console.
+      4.DOM(document Object Model)  :- it is use to manipulate DOM element and display output inside specific element. 
 
 6. What is Variable ?
     -variable it use to store data in it.
@@ -45,21 +47,20 @@ Some other imp ?
  syntax:     var variableName;        // variable declaration 
              variableName = data;    // variable initialization.  
  
-7. What is the rules of variable           
+7. What is the rules of variable      
+-> Rules:
+     -variable name can not be any reserved keyword.
+     -variable name can not start with digit.
+     -variable name start with lowercase letter.
+     -variable name can start with alphanumeric, $ and _;
 
-Rules:
--variable name can not be any reserved keyword.
--variable name can not start with digit.
--variable name start with lowercase letter.
--variable name can start with alphanumeric, $ and _;
-
-! data types in js 
+8. data types in js 
 -primitive data type or inbuilt data type 
-1.number 
-2.string : "" or ''
-3.boolean : true or false ;
-4.undefine 
-5.null : variable with empt data;
+    1.number   : 1,2,3
+    2.string   : "" or ''
+    3.boolean  : true or false ;
+    4.undefine : not defined
+    5.null     : variable with empt data;
 
 -nonprimitive data type or user define data type 
 6.array 
@@ -282,7 +283,8 @@ pooja,shreyas,pratiksha, Devanand, sanket .
 ===============================================================
 18/9/23 
 
-* star patter 
+* star pattern
+
 *Array : 
 -it is use to store multipe values in single variable with same data type.
 -it store value or data on index basis.
@@ -293,6 +295,7 @@ pooja,shreyas,pratiksha, Devanand, sanket .
 21/9/23 
 
 -In Javascript Mainly we have two types of Function 
+
 1.Inbuilt Function : function which is already developed. and which we can use
 2.User Define Function : function developed by user 
 
@@ -364,6 +367,7 @@ meenal,pratiksha,sanket,Devanand,nikita,shradha,mohini,pooja
          -in string blank space is also consider as string. 
 
 *there are three methode which gives us index number of searching string
+
 1.indexOf(searching-string, index number) :
 -it return index number of first occurences of searching string .
 -it start searching of string from left to right.
@@ -389,8 +393,8 @@ meenal,pratiksha,sanket,Devanand,nikita,shradha,mohini,deepak,Shreyas
 ==========================================================
 27/9/23
 
-
 * methode which will return part of string by writting it index number 
+
 4.slice(start-index,End-index): it will return part of string from given string 
           -it will take two parameter 1. start index,2. End-index 
           -if we write +ve index then it will search string from left to right 

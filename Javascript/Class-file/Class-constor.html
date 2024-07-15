@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor -&- without constructor</title>
+</head>
+
+<body>
+    <script>
+// ########################## Without constructor function #######################
+
+
+class myClass {
+
+            //data members
+
+            name = "Rahul";
+            roll_No = 21;
+            subjects = [
+                "Maths",
+                "S.St.",
+                "Science",
+                "English",
+                "Hindi"
+            ]
+
+            //functionalities
+
+            printName() {
+                console.log(this.name);
+            }
+
+            addSubject(subject) {
+                this.subjects.push(subject);  // it is for adding the Subject
+                this.printName();
+            }
+
+            getAllSubject() {
+                return this.subjects;
+            }
+        }
+
+        // to execute the functionalities of the class create an object of that class
+
+        var myObj = new myClass();       //it creates a new object of the class 
+                                         // this is constructor of class ->()
+
+        console.log(myObj.name);      //"Rahul"
+        console.log(myObj.roll_No)
+        console.log(myObj.subjects)
+        console.log(myObj.addSubject("react"));
+        console.log(myObj.getAllSubject());
+
+
+        //##########################   With constructor function  ################################
+
+        class myClass {
+
+            //data members
+            name;
+            rollNo;
+            subjects = [
+                "Maths",
+                "S.St.",
+                "Science",
+                "English",
+                "Hindi"
+            ]
+
+            //functionalities
+
+            constructor(_name, _rollNo) {  // it is for adding data using parameter
+                this.name =_name;
+                this.roll_No = _roll_No
+            }
+
+            printName() {
+                console.log(this.name);    // it is for printing the data wich is name
+            }
+
+            addSubject(subject) {
+                this.subjects.push(subject);
+                this.printName();
+            }
+
+            getAllSubject() {
+                return this.subjects;
+            }
+        }
+
+        var muObj2 = new myClass("Amit", 31);  // we pass value in constructor
+        console.log(myObj2.name);              //"Amit"
+        console.log(myObj2.rollNo);            // 31
+    </script>
+</body>
+
+</html>

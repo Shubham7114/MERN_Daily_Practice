@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area-Of-Rectangle</title>
+</head>
+
+<body>
+    <script>
+        
+        //Area Of Rectangle  Without Constructor
+        const Lenght = prompt("Enter the  Lenght Rectangle :- ")
+        const Breadth = prompt("Enter the  Breadth Rectangle :- ")
+
+        class AreaOfRectangle {
+            AreaRectangle(_Lenght,_Breadth) {
+                const RectangleArea = _Lenght * _Breadth;
+                alert("Area Of Rectangle is :- " + RectangleArea)
+            }
+        }
+
+        let objRectangleArea = new AreaOfRectangle();   // creating a object for accesing class 
+        objRectangleArea.AreaRectangle(Lenght,Breadth)
+
+    </script>
+    <h1>Area Of Rectangle :-<p id="value"></p></h1>
+</body>
+
+</html>

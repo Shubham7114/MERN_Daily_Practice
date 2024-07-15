@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this keyword</title>
+</head>
+
+<body>
+
+    <body>
+        <script>
+            
+            //Area Of Palamtrom Without Constructor
+
+          const string = prompt("Enter a Number:");           // for accepting the data
+
+            class classPalm {
+
+                classPalm (str) {                     
+                  const len = string.length;
+                    for (let i = 0; i < len / 2; i++) {
+                        if (string[i] !== string[len - 1 - i]) {
+                            alert("is not palindrome");
+                        }else{
+                            alert("it is palindrome");
+                        }
+                    }
+                  
+                }
+            }
+         
+
+            let objectPallam = new classPalm();       //creating object for accesing class;
+            objectPallam.classPalm(string);   
+             
+        </script>
+
+      <h1>Pallentrome Number Code.</h1>
+    </body>
+
+</html>

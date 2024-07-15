@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area-of-Triangle</title>
+</head>
+
+<body>
+
+    <script>
+               //Area Of Triangle  Without Constructor
+        const Base = prompt("Enter the Triangle Base :-")
+        const Height = prompt("Enter the Triangle Height :-")
+
+        class AreaOftriangle {
+
+            AreaOftriangle(_Base, _Height) {
+                let TriangleArea = 1 / 2 * _Base * _Height;
+                alert("Area Of Rectangle is :- " + TriangleArea)
+            }
+        }
+
+        let ObjectOfTriangle = new AreaOftriangle();
+        ObjectOfTriangle.AreaTriangle(Base, Height);
+
+    </script>
+
+    <h1>Area Of Triangle Code.</h1>
+</body>
+
+</html>

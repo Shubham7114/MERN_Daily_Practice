@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area-Of-Circle</title>
+</head>
+
+<body>
+    <script>
+
+        //Area Of Circle  Without Constructor
+
+        const Value = prompt("Enter the radius:- ")
+
+        class AreaOfcircle {
+
+            AreaCircle(radii) {
+                let CircleArea = 3.18 * radii * radii;
+                alert("Area Of Circle is :- " + CircleArea)
+            }
+        }
+
+        let objCircleArea = new AreaOfcircle();   // creating a object for accesing class 
+        objCircleArea.AreaCircle(Value)
+
+    </script>
+
+    <h1>Area Of circle</h1>
+</body>
+
+</html>

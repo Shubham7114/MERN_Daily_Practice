@@ -610,8 +610,8 @@ OPPs():-
 4.pollymorphism :
     -it is ability to take more than one form.
 
-  @ method over-loading: when we have multiple method with same in name in same class is called as method overloading. 
-  @ method over-ridding :    when we have multiple method with same name in different class is called as method over-ridding. 
+  @ method over-loading : when we have multiple method with same in name in same class is called as method overloading.  it has return type
+  @ method over-ridding : when we have multiple method with same name in different class is called as method over-ridding. 
 
 ========================================================================================
 30/10/23

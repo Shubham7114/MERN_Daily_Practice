@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area-of-Square</title>
+</head>
+
+<body>
+    <script>
+        //Area Of Square  Without Constructor
+
+        const Value = prompt("Enter the Square Side :- ")
+
+        class AreaOfSquare {
+            AreaSquare(Side) {
+                const SquareArea = Side * Side ;
+                alert("Area Of Square is :- " + SquareArea)
+            }
+        }
+
+        let objSquareArea = new AreaOfSquare();   // creating a object for accesing class 
+        objSquareArea.AreaSquare(Value)
+
+    </script>
+</body>
+
+</html>

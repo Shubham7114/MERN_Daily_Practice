@@ -365,5 +365,101 @@ Lexical Scoping :- outer function call in inner that time it is Lexical scoping
       1.KFC
       2.Subway
       3.Dominoz
+------------------------------------------------------------------------------------------
+12-07-2024
+
+ES5 - no classes in js
+ES6 - js introduce classes
+
+this - Keywords is used to refer to the class
+
+Syntax:-
+     class <name_of_class>{
+        //data members
+        //functionalities
+     }
+
+1. --??--??--> //without constructor function
 
 
+    class myClass{
+    
+       //data members
+    
+       name = "Rahul";
+       roll_No = 21;
+       subjects = [
+          "Maths",
+          "S.St.",
+          "Science",
+          "English",
+          "Hindi"
+       ]
+    
+       //functionalities
+    
+       printName(){
+          console.log(this.name);
+       }
+    
+       addSubject(subject){
+          this.subjects.push(subject);
+          this.printName();
+       }
+    
+       getAllSubject(){
+          return this.subjects;
+       }
+    }
+    
+    // to execute the functionalities of the class create an object of that class
+    
+    var myObj = new myClass();       //it creates a new object of the class
+    
+    console.log(myObj.name); //"Rahul"
+    console.log(myObj.roll_No)
+    console.log(myObj.subjects)
+    console.log(myObj.addSubject("react"));
+    console.log(myObj.getAllSubject());
+    
+--??--??--> // With constructor function
+
+class myClass{
+
+   //data members
+   name;
+   rollNo;
+   subjects = [
+      "Maths",
+      "S.St.",
+      "Science",
+      "English",
+      "Hindi"
+   ]
+
+   //functionalities
+   constructor(_name, _rollNo) {
+      this.name = name;
+      this.roll_No = _roll_No
+   }
+
+   printName(){
+      console.log(this.name);
+   }
+
+   addSubject(subject){
+      this.subjects.push(subject);
+      this.printName();
+   }
+
+   getAllSubject(){
+      return this.subjects;
+   }
+}
+
+var muObj2 = new myClass("Amit",31);
+console.log(myObj2.name);  //"Amit"
+console.log(myObj2.rollNo);    // 31
+
+Task:- 1.Display Area --Circle,--Rectangle,--Square,--Triangle; (all-done with no constructor)
+       -> using  constructor overloading , method overloading

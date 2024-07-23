@@ -463,3 +463,258 @@ console.log(myObj2.rollNo);    // 31
 
 Task:- 1.Display Area --Circle,--Rectangle,--Square,--Triangle; (all-done with no constructor)
        -> using  constructor overloading , method overloading
+
+note :- we cant touch let and const with this Keywords
+____________________________ USE STRICT _________________________________
+15/07/2024
+use strict :- 1.we use the useStrict to make secure code.
+                                               ->IMP for interview
+
+If you can attach a context while calling the function:
+     a.You need not to assign the context to local variable
+     b.you can reuse the same function in various diff context
+
+!.Example:-
+-------------------  Code With Error------------------
+         'use strict'
+         
+         this.table = "House table";
+         
+         const clean = function (){
+         console.log(`${this.table} cleaned!!`);
+         
+         }
+         
+         clean(); //Error
+
+--------------------  Fixed code ---------------------
+
+         'use strict'
+         
+         this.table = "House table";
+         
+         const clean = function (){
+         console.log(`${this.table} cleaned!!`);
+         
+         }
+         
+         clean.call(this); 
+
+         let obj ={
+            table: "Obj table"
+         }
+         clean.call(obj)
+---------------------- Example Code -------------------
+
+     'use strict'
+         
+         this.table = "House table";
+         this.furniture = {
+            table : "Class Tables"
+         }
+         
+         const clean = function (){
+         console.log(`${this.table} cleaned!!`);
+         
+         }
+         
+         clean.call(this); 
+
+         let obj ={
+            table: "Obj table"
+         }
+         clean.call(obj)
+         clean.call(furniture);
+
+   ------------------- Passing Parameter in Call Function--------------------------
+    'use strict'
+         
+         this.table = "House table";
+
+         
+         
+         const clean = function (name , name2, nam3){
+         console.log(`${this.table} cleaned by ${name}!!`);
+         }
+         // clean();            -> give error comment it
+
+         clean.call(this, "Ritvi","Adesh","Rakesh");
+
+         let obj = {
+            table : "Obj Table"
+         }
+
+         clean.call(obj, "Raju")
+
+in this we see :- 1.'Use Strict'
+                  2.'call()'    string
+                  
+______________________________  __________________________________
+
+16-07-2024
+
+-------------------------- rest operator apply()  ----------------------
+'use strict'
+
+  this.num =10;     //var
+
+  const sum = ( ...paramsArray)=> {
+    let res =0;
+    for (let i=0;i<paramsArray.length;i++) {
+      res += paramsArray[i]
+    }
+    return this.num+res;
+  }   
+var arrayofParams =[20,30,40,50,60,70];
+var result = sum.apply(this, arrayofParams);
+console.log(result)
+----------------------------------------------------------------------------
+
+clean():- pass context simple Parameter pass that time we go clean function.
+apply():- pass context deal with array that time we use apply function.
+
+Sprade(...)& Rest(...)
+The Spread operator is used to 'spread' an iterable into its elements,
+The Rest operator Syntax allow a function accept an inde
+
+----------------------------------------------------------------------------
+@->Example of Bind :-
+   1. bind  not execute directly it will wait 
+   2. it will need all Parameter if yout not pass all Parameter it give error
+
+      'use strict'
+
+       this.table = "House Table";
+         const clean = function(name,name2,name3){
+               console.log(`${this.table} cleaned by ${name},${name2} and ${name3} !!`);
+         }
+
+       clean.call(this, "Ritvi","Shubham","Mahesh");   //you get an immediate output,clean 
+                                                        function will be immediately execute
+       var myBindfunction = clean.bind(this, "Ritvi"); //you dont get an immediate output ,clean 
+                                                        function will be not executed immediately
+       myBindfunction("Adesh", "Rajesh");              //clean function will be executed and you  
+                                                        get the output
+                                                        
+Task :- 1.reverce of a string display :- "Javascript" .
+        2. array with serch elements
+
+        created:- reverce-str.html file ->Practise.js
+      
+---------------------------------------------------------------------------------------
+17-07-2024 :- Sir not Avalable
+---------------------------------------------------------------------------------------
+18-07-2024
+Created files :- 
+
+'use strict'
+
+this.table = "window table";
+
+const clean = function(){
+   console.log(`${this.table} cleaned !!`);
+
+    const doubleClean = function(){
+      console.log(`${this.table} Double cleaned !!`)
+
+      const Tripleclean = function (){
+         console.log(`${this.table} Triple cleaned`)
+      }
+      Tripleclean.call(this);
+    }
+    doubleClean.call(this);
+}
+clean.call(this);
+
+-------------->   //Use of Arrow Function <---------------------
+
+this.table = "window table";
+
+const clean = function = () => {
+   console.log(`${this.table} cleaned !!`);
+
+    const doubleClean = function(){
+      console.log(`${this.table} Double cleaned !!`)
+
+      const Tripleclean = function (){
+         console.log(`${this.table} Triple cleaned`)
+      }
+      Tripleclean(this);
+    }
+    doubleClean(this);
+}
+clean(this);
+
+-----------------------\\  Dictionary in JS  //------------------------
+
+-> Dictionary is a key and value pair
+-> In JS we create key , value pairs with the help of objects
+
+let obj ={
+   name   : "Shubham"
+   class  : "javascript"
+   school : "V.S.satav highschool"
+   rollNo : 001
+}
+console.log(obj.name);
+console.log(obj["school"])
+
+------------------------  \\ Scheduling //   --------------------
+
+(1) timeout - you execute a piace of code only once after a set time out 
+        e.g. after 15 minutes I will logout the user 
+
+        setTimeout(()=>{
+         //some code
+         console.log("inside timeout")
+        },5000); //5 seconds
+
+(2) interval - you will execute a piace of code after every set interval
+              e.g. in every 3 seconds I will check for a new email
+
+              setInterval(()=>{
+               //some code
+               console.log("inside interval")
+              },3000)  // 3 sec
+
+------------------------  \\ Event Handeling //   --------------------
+
+<button onClick="buttonClickHandler()">
+Click Me !!
+</button>
+
+<input type="text" onChange="onTextChange(event)">
+
+function buttonClickHandler(){
+   alert("Button clicked !!")
+}
+
+function onTextChange(event){
+   console.log(event.target.value);
+}
+
+
+------------------------  \\ Exception Handeling //   --------------------
+try/then {
+   //Code which can throw an exception     //Error
+   //API call
+}catch (exception){
+   //another logic on exception
+   //Also make another API call to a diff endpoint
+     console.log(exception)
+}finally{
+   //this code  always run
+}
+
+try{
+   var a = b + 10;
+}catch(exception){
+   console.log(exception);
+}finally{
+   console.log("This block always runs");
+}
+
+
+
+ 
+

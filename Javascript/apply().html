@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    'use strict'
+
+    var num = 10;
+    const sum = (...paramsArray) => {
+      let res = 0;
+      for (let i = 0; i < paramsArray.length; i++) {
+        res += paramsArray[i]
+      }
+      return this.num + res;
+    }
+    var arrayofParams = [20, 30, 40, 50, 60, 70]
+    var result = sum.apply(this, arrayofParams);
+
+    console.log(result)
+    // -----------------------------------------------------------------
+   
+
+this.table = "House Table";
+
+const clean = function(name,name2,name3){
+   console.log(`${this.table} cleaned by ${name},${name2} and ${name3} !!`);
+}
+
+clean.call(this, "Ritvi","Shubham","Mahesh");    //you get an immediate output,clean function
+                                                  // will be immediately execute
+var myBindfunction = clean.bind(this, "Ritvi");  //you dont get an immediate output ,clean function
+                                                  // will be not  executed immediately
+myBindfunction("Adesh", "Rajesh");               // clean function will be executed and you get the
+                                                   // output
+
+  </script>
+
+  <h1>Hello</h1>
+
+</body>
+
+</html>

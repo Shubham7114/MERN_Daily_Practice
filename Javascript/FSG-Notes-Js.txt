@@ -714,7 +714,127 @@ try{
    console.log("This block always runs");
 }
 
+---------------------------- Arrow Function And array ------------------------
+23-07-2024
+
+ ---> old es-5 we declare function is :- 
+
+ function name1(){
+   // Code in this
+ }
+ name1();
+
+--> ES-6 introduce arrow Function :-
+
+ function name2 =()=>{
+
+ }
+ name2(); // function call
 
 
- 
+----------- \\ Map Method //-------------
+var array =[1,2,3,4,5,6,7];
 
+function mapper(num){
+return num * 2;
+}
+var result = array.map(mapper);
+console.log(result)
+
+var result1 = array.map((num)=>{
+     return num * 2;
+})
+console.log(result1)
+
+--------------------\\ For Each //--------------------
+
+var array6 = [1,2,3,4,5,6,7,8];
+
+function multiplyNumber(item){
+   return item * 10;
+}
+
+var resultarray6 = array6.forEach(multiplyNumber);
+console.log(array6);
+console.log(resultarray6); // 10,20,30,40,50,60,70,80
+
+----------------------\\  Find //----------------------
+
+var array10 = ["a", "b", "Shubham",1,4,true,null,undefined,{},[]];
+
+function serch(item){
+   return item = 'Shubham';
+}
+
+var findResult = array10.find(search);
+
+console.log(findResult);
+
+----------------------\\  concat //----------------------
+
+var array7 = ['a','b','c'];
+
+var array8 = [1,2,3];
+
+var array9 = [true,false,true];
+
+array7 = array7.concat(array8,array9)
+
+console.log(array7)
+
+----------------------\\  sort-array //----------------------
+
+var array12 = [3,6,8,4,6,10,,34,34,87,54,89,14,98]
+
+function sortArray(a,b){
+   return a - b // - assending order  + decending order
+}
+
+var sortResult1 = array12.sort(sortArray)
+console.log(sortResult1);
+
+------------------- \\ sort - obj //--------------------------
+
+
+var array13 = ['b','z','a','f','e','g']
+
+------------------- \\ Ternary Operators //--------------------------
+1.
+
+if(condition){
+   // Statements in if block
+}else{
+   // Statements in else block
+}
+
+// in ternary operator
+syntax:-
+(condition)? (Statements in if block) : (Statements in else block); // valid 
+       |______________(true)__________:__________(false)
+2.----------->
+
+if(condition){
+
+}
+// in ternary operator
+Syntax:-
+(condition)? :(Statements in if block); // not valid , throw an error
+
+3.----------->
+
+if(condition){
+  // Statements in if block
+       if(condition){
+           // Statements in if block
+       }else{
+           // Statements in else block
+       }
+}else{
+   // Statements in outer else block
+}
+
+//In ternary operator
+Syntax:-
+(condition)?(condition)?(statements in if block):(statements in else block):(statements in outer else block);
+     |          |___________________^(true)__________________^(false)                       |
+     |________________________>__________________(false)____________________________>_______|

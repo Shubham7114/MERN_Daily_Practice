@@ -1,35 +1,35 @@
 class Area {
-    double length, breadth, radius, side, base, height;
+    double length, breadth, radius_, side, base, height;
 
-    // Constructor overloading
-    // Default constructor
+
+   
     public Area() {}
 
-    // Constructor for rectangle
+    
     public Area(double length, double breadth) {
         this.length = length;
         this.breadth = breadth;
     }
 
-    // Constructor for square
+  
     public Area(double side) {
         this.side = side;
     }
 
-    // Constructor for circle
-    public Area(double radius, boolean isCircle) {
-        this.radius = radius;
+
+    public Area(double radius_, boolean isCircle) {
+        this.radius_ = radius_;
     }
 
-    // Constructor for triangle
+   
     public Area(double base, double height, boolean isTriangle) {
         this.base = base;
         this.height = height;
     }
 
-    // Method overloading
-    public double area(double radius) {
-        return Math.PI * radius * radius;
+   
+    public double area(double radius_) {
+        return Math.PI * radius_ * radius_;
     }
 
     public double area(double side, boolean isSquare) {

@@ -1,0 +1,41 @@
+*{
+    padding: 0%;
+    margin: 0px;
+}
+
+.box{
+    background-color: rgba(0, 0, 255, 0.348);
+    height: 450px;
+    width: 100%;
+    padding-top: 150px;
+  
+}
+.container{
+    background-color: rgba(165, 42, 42, 0.6);
+    padding: 40px;
+    width: 400px;
+    border-radius: 15px;
+    margin-left: 400px;
+    
+}
+.Head{
+    color: rgba(235, 102, 14, 0.587);
+    align-items: center;
+}
+.Head{
+    color: white;
+    font-size: larger;
+}
+#box-container{
+    margin-top: 20px;
+    background-color: wheat;
+    padding: 50px;
+}
+.Btn{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: violet;
+    color: white;
+    border-radius: 10px;
+    border:none;
+}
